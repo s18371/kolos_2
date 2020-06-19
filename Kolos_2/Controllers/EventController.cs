@@ -20,8 +20,8 @@ namespace Kolos_2.Controllers
         {
             _context = context;
         }
-        [Route("api/artists/{idArt}/events/{idEvt}")]
-        [HttpGet]
+        [Route("api/artists/{idArt}/events/{idevt}")]
+        [HttpPut("{idArt},{idevt}")]
         public IActionResult UpdateEvt(int idArt, int idevt,Artist_Event art)
         {
             try
